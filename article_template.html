@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newarithmeticApp">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/client/images/favicon.png">
+	<link type="text/css" rel="stylesheet" href="/client/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="/client/css/styles.css" />
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="/client/scripts/bootstrap.min.js"></script>
+	<script src="/client/scripts/angular.min.js"></script>
+	<script src="/client/scripts/angular-resource.min.js"></script>
+	<script src="/client/scripts/angular-route.min.js"></script>
+	<script src="/client/app/directives/generalNavbar.js"></script>
+	<script src="/client/app/directives/footer.js"></script>
+	<script src="/client/app/directives/subscribeBox.js"></script>
+	<script src="/client/app/controllers/ArticleCtrl.js"></script>
+	<script src="/client/app/app.js"></script>
+	<title> newarithmetic </title>
+</head>
+<body ng-controller="ArticleController">
+	<div class="main-col">
+		<!-- ad and navbar (in that order) -->
+		<div class="row">
+			<div class="col-xs-12 navbar-row">
+				<div general-navbar></div>
+			</div>
+		</div>
+		<!--grey area that looks blank -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="grey-area"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="content">
+					<h1>USMNT defeats Germany 2-1</h1>
+					<p class="content-title-info">
+						<em>Written by: thedanman55 ... 06/10/2015 10:55PM</em>
+					</p>
+					<hr/>
+					<p class="content-text">
+					This is some text here. blah blah blah. USMNT wins, video below, enjoy!
+					</br>
+					<p class="content-item-title"><strong> Video Highlights </strong></p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/BkCZPYSHss0" frameborder="0" allowfullscreen></iframe>					
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="tweets">
+					<!-- current height is 380, change as needed on twitter's site-->
+					<a class="twitter-timeline" href="https://twitter.com/newarithmetic_" data-widget-id="606320227622592512">Tweets by @newarithmetic_</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script",			                    "twitter-wjs");</script>
+				</div>
+				
+				<subscribe-box></subscribe-box>
+				
+				<div class="related-box related-box-article related-rightcol">
+					<div class="related-header">
+						<p class="related-headertext"><strong>popular article<strong></p>
+					</div>
+					<a href="#">
+						<img ng-src="/client/images/cardinals.jpg" class="related-img"/>
+					</a>
+					<a href="#">
+						<p class="related-text">Cardinals first to 40 wins and how they got there</p>
+					</a>
+					<div class="srctext-box">
+						<p class="related-sourcetext"><em>Image: <a href="https://flic.kr/p/t1kVSq"> "Cardinals vs. Mets: 5/18/2015" by Arturo Pardavalla III via Flickr</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</br>
+		<hr/>
+		<p class="related-contentinfo">Other stuff you might find interesting: </p>
+		<div class="row related-content">
+			
+			<div class="col-xs-4">
+				<div class="related-box related-box-article">
+					<div class="related-header">
+						<p class="related-headertext"><strong>popular article<strong></p>
+					</div>
+					<a href="#">
+						<img ng-src="/client/images/cardinals.jpg" class="related-img"/>
+					</a>
+					<a href="#">
+						<p class="related-text">Cardinals first to 40 wins and how they got there</p>
+					</a>
+					<div class="srctext-box">
+						<p class="related-sourcetext"><em>Image: <a href="https://flic.kr/p/t1kVSq"> "Cardinals vs. Mets: 5/18/2015" by Arturo Pardavalla III via Flickr</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-xs-4">
+				<div class="related-box related-box-article">
+					<div class="related-header">
+						<p class="related-headertext"><strong>popular article<strong></p>
+					</div>
+					<a href="#">
+						<img ng-src="/client/images/cardinals.jpg" class="related-img"/>
+					</a>
+					<a href="#">
+						<p class="related-text">Cardinals first to 40 wins and how they got there</p>
+					</a>
+					<div class="srctext-box">
+						<p class="related-sourcetext"><em>Image: <a href="https://flic.kr/p/t1kVSq"> "Cardinals vs. Mets: 5/18/2015" by Arturo Pardavalla III via Flickr</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="col-xs-4">
+				<div class="related-box related-box-article">
+					<div class="related-header">
+						<p class="related-headertext"><strong>popular article<strong></p>
+					</div>
+					<a href="#">
+						<img ng-src="/client/images/cardinals.jpg" class="related-img"/>
+					</a>
+					<a href="#">
+						<p class="related-text">Cardinals first to 40 wins and how they got there</p>
+					</a>
+					<div class="srctext-box">
+						<p class="related-sourcetext"><em>Image: <a href="https://flic.kr/p/t1kVSq"> "Cardinals vs. Mets: 5/18/2015" by Arturo Pardavalla III via Flickr</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<hr/>
+		<div class="row bottom-text">
+			<general-footer></general-footer>
+		</div>
+	</div>
+</body>
+</html>

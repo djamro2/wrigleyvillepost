@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newarithmeticApp">
+	
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/client/images/favicon.png">
+	
+	<!-- angular stuff and dependencies-->
+	<script src="/client/scripts/angular.min.js"></script>
+	<script src="/client/scripts/angular-resource.min.js"></script>
+	<script src="/client/scripts/angular-route.min.js"></script>
+	<script src="/client/app/services/factories.js"></script>
+	<script src="/client/app/directives/generalNavbar.js"></script>
+	<script src="/client/app/directives/footer.js"></script>
+	<script src="/client/app/directives/subscribeBox.js"></script>	
+	<script src="/client/app/controllers/IndexCtrl.js"></script>
+	<script src="/client/app/app.js"></script>
+	
+	<!-- angular material -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
+	
+	<!-- bootstrap and jquery -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="/client/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/client/scripts/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<!-- random dependencies -->
+	<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="/client/css/styles.css" />
+	
+	<!-- meta data -->
+	<title> {{ title }} </title>
+
+	{{#if isProduction}}
+	<!-- google analytics, leave to be last -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-64775712-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	{{/if}}
+	
+</head>
+
+<body ng-controller="IndexController">
+	<md-content class="background">
+	<div class="main-col">	
+		
+	<div class="row" ng-init="selectTab('{{ tab }}')">
+		<div class="col-xs-12 navbar-row">
+			
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="/">
+				  <p class="navbar-brand-text">Wrigleyvillepost</p>
+				  </a>
+			    </div>
+			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li ng-class="homeTab">
+						<a href="/" class="cubs-red"> 
+						Home <span class="sr-only">(current)</span>
+						</a>
+					</li>
+			        <li ng-class="cubsnewsTab"><a class="cubs-red" href="/cubsnews"> Cubs news </a></li>
+					<li ng-class="mlbTab"><a class="cubs-red" href="/mlb"> All other MLB </a></li>
+					<li ng-class="miscTab"><a href="/misc" class="cubs-red">Misc. Sports</a></li>
+					<li ng-class="aboutTab"><a href="/about" class="cubs-red"> About/Contact </a></li>
+			      </ul>
+				  <ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="http://www.facebook.com"
+							<i class="fa fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/wrigleyvllepost">
+							<i class="fa fa-twitter"></i>	
+						</a>
+					</li>
+				  </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>	
+
+		</div>
+	</div>
+		
+	<md-content class="md-whiteframe-z3 content-index">
+		
+		
+		<div class="row">
+			<div class="col-md-8 {{#if isAbout}} col-md-offset-2 {{/if}}">
+				<div class="content-home">
+					<div class="row">
+						
+						{{{body}}}
+						
+					</div>
+				</div>	
+			</div>
+			
+			{{#unless isAbout}}
+					
+			<div class="col-md-4">
+				
+				<div class="padding-right-col">
+				<a href="http://amzn.to/1VeIrc8">
+				<div class="amazon-box md-whiteframe-z3">
+					<p class="amazon-text">See the latest deals on Amazon</p>	
+				</div>
+				</a>
+				</div>
+				
+				<div class="tweets rightcol-margin">
+					<!-- current height is 380, change as needed on twitter's site-->
+					<a class="twitter-timeline" href="https://twitter.com/wrigleyvllepost" data-widget-id="617145963677925376">Tweets by @wrigleyvllepost</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+				</div>
+				
+				<div class="padding-right-col">
+				<a href="https://twitter.com/wrigleyvllepost">
+				<div class="social-media-box social-media-box-home md-whiteframe-z3 social-twitter">
+					<i class="fa fa-twitter fa-2x" style="margin-right: 0.5em;"></i>
+					<p class="social-media-text">Follow us on Twitter</p>	
+				</div>
+				</a>
+				</div>
+				
+				<div class="padding-right-col">
+				<a href="http://www.facebook.com">
+				<div class="social-media-box social-media-box-home md-whiteframe-z3 social-facebook">
+					<i class="fa fa-facebook-f fa-2x" style="margin-right: 0.5em;"></i>
+					<p class="social-media-text">Like us on Facebook</p>	
+				</div>
+				</a>
+				</div>
+				
+				<md-content layout="column" class="subscribe-box rightcol-margin md-whiteframe-z3">
+	
+					<p style="margin-bottom: 0;">Enter your email to get latest news: </p>
+					
+					<md-input-container>
+				      <label>Email</label>
+				      <input ng-model="subscribe.email" type="email">
+				    </md-input-container>
+					
+					<md-content layout="row" layout-fill class="subscribe-selectdiv" layout-align="start end">
+					  
+					   <p style="margin-bottom: 2px;">Subscribe to: </p> 
+						
+					  <md-select flex offset="5" placeholder="All" ng-init="subscribe.option = 'all'" ng-model="subscribe.option" style="padding: 0;">
+						<md-option value="all"> All </md-option>
+						<md-option value="mlb"> MLB </md-option>
+						<md-option value="nba"> NBA </md-option>
+						<md-option value="cubs"> Cubs </md-option>
+				      </md-select>
+						
+					</md-content>
+					
+					</br>
+				
+					<md-content layout="row" layout-align="center center" layout-fill>
+						<md-button flex="50" class="md-raised md-primary subscribe-button" ng-click="submitEmail(subscribe)"> Submit </md-button>
+					</md-content>
+				
+					<p ng-show="emailSubmitted && !isError" class="subscribe-submit-message"> Thank you! </p>
+					<p ng-show="isError" class="subscribe-submit-message"> Sorry, there was a problem adding your email </p>
+					<p ng-show="isOverTimeLimit" class="subscribe-submit-message"> you have submitted too many emails recently </p>
+				
+				</md-content>
+				
+				<div class="padding-right-col">
+				<a href="http://amzn.to/1VeIrc8">
+				<div class="amazon-box amazon-box-home md-whiteframe-z3">
+					<p class="amazon-text">See the latest deals on Amazon</p>	
+				</div>
+				</a>
+				</div>
+				
+			</div>
+			
+			{{/unless}}
+			
+		</div>
+		</br>
+		<hr/>
+		
+		<div class="row bottom-text">
+			<div class="col-xs-12">
+			<div class="margin-auto">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- newarithmetic.com footer ad -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:728px;height:90px"
+			     data-ad-client="ca-pub-2264916173854946"
+			     data-ad-slot="9738828114"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			</div>
+			<div style="margin-top: 30px;">
+			<div class="disclaimer">
+				<strong>Disclaimer</strong>: All works on wrigleyvillepost are a reflection of the opinion
+				of wrigleyvillepost and are not affiliated with the MLB or any MLB teams.
+				Although we try our best to ensure the validity of the information seen here,
+				we cannot guarantee that everything will be exactly correct.
+				All content posted on wrigleyvillepost is used with correct permissions.
+				Most photos are used under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by 2.0</a> license
+				which allows for the use of photos as long as the author is credited. If your photo was
+				used and you want it to be removed, or if the license has been changed, let wrigleyvillepost
+				know and the image will be removed as soon as possible. 
+			</div>
+			<general-footer></general-footer>
+			</div>
+			</div>
+		</div>
+		
+	</md-content>
+	
+	</div>
+	</md-content>
+</body>
+</html>

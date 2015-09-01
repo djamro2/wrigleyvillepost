@@ -1,0 +1,18 @@
+This page shows all comments on this website. <br/> The purpose of this is really
+for me to just filter out any spam easily.
+
+<div class="bold-border"></div>
+
+{{#each comments}}
+	<div>
+		<strong>
+			{{nickname}}
+		</strong>
+		at: {{formattedDateTime}}
+		<br/>
+		<p class="comment-content">
+			{{content}}
+		</p>
+		<hr/>
+	</div>	
+{{/each}}

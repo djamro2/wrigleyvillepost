@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newarithmeticApp">
+<head>
+	
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/client/images/favicon.png">
+	
+	<!-- angular -->
+	<script src="/client/scripts/angular.min.js"></script>
+	<script src="/client/scripts/angular-resource.min.js"></script>
+	<script src="/client/scripts/angular-route.min.js"></script>
+	
+	<script src="/client/app/directives/generalNavbar.js"></script>
+	<script src="/client/app/directives/footer.js"></script>
+	<script src="/client/app/directives/subscribeBox.js"></script>
+	
+	<!-- angular material -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
+	
+	<!-- bootstrap and jquery -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="/client/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/client/scripts/bootstrap.min.js"></script>
+	
+	<!-- random dependencies -->
+	<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="/client/css/styles.css" />
+	
+	
+	<script src="/client/app/controllers/ArticleCtrl.js"></script>
+	<script src="/client/app/app.js"></script>
+	<title> newarithmetic - souza little league home run</title>
+
+	<!-- google analytics, leave to be last -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-64198025-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+	
+</head>
+<body ng-controller="ArticleController">
+	<div class="main-col">
+		
+		<div class="row">
+			<div class="col-xs-12 navbar-row">
+				<div general-navbar></div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8">
+				<div class="content md-whiteframe-z3">
+					<h1 class="content-title">Steven Souza's bunt goes for a 2 run home run</h1>
+					<p class="content-title-info">
+						<em>Written by: thedanman55 ... 06/17/2015 10:55PM</em>
+					</p>
+					<hr/>
+				
+					<p class="content-text">
+					Tampa Bay continues their success as Souza was a beast in today's game. He hit a normal home-run 
+					and had this little league one too: 
+					</p>
+				
+					<div class="mlb-embedded">
+					<iframe src='http://m.mlb.com/shared/video/embed/embed.html?content_id=172197183&topic_id=6479266&width=550&height=307&property=mlb' width='550' height='307' frameborder='0'>Your browser does not support iframes.</iframe>
+					</div>
+					
+					<p class="content-text">
+					There haven't been too many little league home runs this year, but either way I 
+					think the one we've seen today, is definitely at the top. In a very rainy Nationals Park, Souza trys to bunt for a hit,
+					but with the wet conditions the pitcher over throws on his throw to first, something which would normally let Souza get to third
+					on such a play, but another miss on the throw to home allows him to score easily. Video above: 
+					</p>
+						
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="tweets">
+					<!-- current height is 380, change as needed on twitter's site-->
+					<a class="twitter-timeline" href="https://twitter.com/newarithmetic_" data-widget-id="606320227622592512">Tweets by @newarithmetic_</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script",			                    "twitter-wjs");</script>
+				</div>
+				
+				<subscribe-box></subscribe-box>
+				
+				
+				<div class="related-box related-box-article related-rightcol md-whiteframe-z3">
+					<div class="related-header">
+						<p class="related-headertext"><strong>recent article<strong></p>
+					</div>
+					<a href="/views/articles/blackhawks-reaction">
+						<img ng-src="/client/images/blackhawks.jpg" class="related-img"/>
+					</a>
+					<a href="/views/articles/blackhawks-reaction">
+						<p class="related-text">Funniest reaction found to Blackhawk's recent win</p>
+					</a>
+					<div class="srctext-box">
+						<p class="related-sourcetext"><em>Image: <a href="https://flic.kr/p/8vX6Ro"> "Blackhawks Lion" by Jon Hurd via Flickr</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</br>
+		<hr/>
+		<p class="related-contentinfo">Other stuff you might find interesting: </p>
+		<div class="row related-content">
+			
+			<p class="related-contentinfo">Nothing right now. Sorry!</p>
+			
+		</div>
+		<hr/>
+		<div class="row bottom-text">
+			<general-footer></general-footer>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+	
+</body>
+</html>

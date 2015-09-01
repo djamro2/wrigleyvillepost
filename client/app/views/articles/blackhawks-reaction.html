@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newarithmeticApp">
+<head>
+	
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/client/images/favicon.png">
+	
+	<!-- angular -->
+	<script src="/client/scripts/angular.min.js"></script>
+	<script src="/client/scripts/angular-resource.min.js"></script>
+	<script src="/client/scripts/angular-route.min.js"></script>
+	
+	<script src="/client/app/directives/generalNavbar.js"></script>
+	<script src="/client/app/directives/footer.js"></script>
+	<script src="/client/app/directives/subscribeBox.js"></script>
+	
+	
+	<!-- angular material -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
+	
+	<!-- bootstrap and jquery -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="/client/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/client/scripts/bootstrap.min.js"></script>
+	
+	<!-- random dependencies -->
+	<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="/client/css/styles.css" />
+	
+	<!-- google analytics, leave to be last -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-64198025-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+
+	<script src="/client/app/controllers/ArticleCtrl.js"></script>
+	<script src="/client/app/app.js"></script>
+	
+	<title> newarithmetic - fans reaction to winning the cup </title>
+	
+</head>
+<body ng-controller="ArticleController">
+	<div class="main-col">
+		
+		<div class="row">
+			<div class="col-xs-12 navbar-row">
+				<div general-navbar></div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8">
+				<div class="content md-whiteframe-z3">
+					<h1 class="content-title">Funniest reaction found to Blackhawk's recent win</h1>
+					<p class="content-title-info">
+						<em>Written by: thedanman55 ... 06/16/2015 8:55PM</em>
+					</p>
+					<hr/>
+				
+					<p class="content-text">
+					Whenever a team wins a major championship, fans reactions can always bring the unexpected.
+					In this case, a fan takes a witty and hilarious take on the blackhaks winning. Watch
+					for yourself here:
+					</p>
+				
+					<script height="307px" width="550px" src="http://player.ooyala.com/iframe.js#ec=k4ZW5vdTonn2pQOOld_zuMlG_aX9WQss&pbid=4441ed2a84e74b66b60ce980f20deb84"></script>
+					
+					<p class="content-text margin-top-1_5">
+						Also, some random info. the parade is this Thursday (06/18). Having been to one
+						myself, they are an absolutly awesome experience.
+						<a href="http://bleacherreport.com/articles/2497472-chicago-blackhawks-parade-2015-route-date-tv-schedule-live-stream-and-more">
+						Here is some more info on it from a good article on it from bleacherreport
+						</a>
+					</p>
+					
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="tweets">
+					<!-- current height is 380, change as needed on twitter's site-->
+					<a class="twitter-timeline" href="https://twitter.com/newarithmetic_" data-widget-id="606320227622592512">Tweets by @newarithmetic_</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script",			                    "twitter-wjs");</script>
+				</div>
+				
+				<subscribe-box></subscribe-box>
+				
+				<div class="related-box related-box-article related-rightcol md-whiteframe-z3">
+					<div class="related-header">
+						<p class="related-headertext"><strong>recent article<strong></p>
+					</div>
+					<a href="/views/articles/cardinals-hacking">
+						<img ng-src="/client/images/cardinals.jpg" class="related-img"/>
+					</a>
+					<a href="/views/articles/cardinals-hacking">
+						<p class="related-text">FBI investigating the Cardinals of hacking into the Astros 'Ground Water' database</p>
+					</a>
+					<div class="srctext-box">
+						<p class="related-sourcetext"><em>Image: <a href="https://flic.kr/p/t1kVSq"> "Cardinals vs. Mets: 5/18/2015" by Arturo Pardavalla III via Flickr</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</br>
+		<hr/>
+		<p class="related-contentinfo">Other stuff you might find interesting: </p>
+		<div class="row related-content">
+			
+			<p class="related-contentinfo">Nothing right now. Sorry!</p>
+			
+		</div>
+		<hr/>
+		<div class="row bottom-text">
+			<general-footer></general-footer>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<div class="col-sm-6 border-right">
+	<p class="content-col-title"><em>Recent</em></p>
+	<hr/>
+	
+	{{#each articles}}
+		<div class="related-box related-box-home md-whiteframe-z3">
+			<a href="{{base_url}}{{route}}">
+				<img src="{{image}}" class="related-img"/>
+			</a>
+			<a href="{{base_url}}{{route}}">
+				<p class="related-text">{{og_title}}</p>
+			</a>
+			{{#unless noAttribute}}
+			<div class="srctext-box">
+				<p class="related-sourcetext"><em>Image: <a href="{{image_src}}"> {{image_title}}</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+			</div>
+			{{/unless}}
+		</div>
+	{{/each}}
+	
+</div>
+	
+<div class="col-sm-6">
+	<p class="content-col-title"><em>Popular</em></p>
+	<hr/>
+	
+		{{#each articles}}
+			{{#if isPopular}}
+			<div class="related-box related-box-home md-whiteframe-z3">
+				<a href="{{base_url}}{{route}}">
+					<img src="{{image}}" class="related-img"/>
+				</a>
+				<a href="{{base_url}}{{route}}">
+					<p class="related-text">{{og_title}}</p>
+				</a>
+				{{#unless noAttribute}}
+				<div class="srctext-box">
+					<p class="related-sourcetext"><em>Image: <a href="{{image_src}}"> {{image_title}}</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+				</div>
+				{{/unless}}
+			</div>
+			{{/if}}
+		{{/each}}
+	
+</div>

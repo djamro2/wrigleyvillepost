@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newarithmeticApp">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="/client/images/favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="/client/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="/client/css/styles.css" />
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="/client/scripts/bootstrap.min.js"></script>
+	<script src="/client/scripts/angular.min.js"></script>
+	<script src="/client/scripts/angular-resource.min.js"></script>
+	<script src="/client/scripts/angular-route.min.js"></script>
+	<script src="/client/app/directives/generalNavbar.js"></script>
+	<script src="/client/app/directives/footer.js"></script>
+	<script src="/client/app/directives/subscribeBox.js"></script>
+	<script src="/client/app/controllers/IndexCtrl.js"></script>
+	<script src="/client/app/app.js"></script>
+	<title> newarithmetic </title>
+</head>
+<body ng-controller="IndexController">
+	<div class="main-col">
+		<!-- ad and navbar (in that order) -->
+		<div class="row">
+			<div class="col-xs-12 navbar-row">
+				<div general-navbar></div>
+			</div>
+		</div>
+		<!--grey area that looks blank -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="grey-area"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="home-headertext"><strong>Hi there!</strong> 
+				newarithmetic.com is a new site that I've put together recently to share my love of the Cubs, baseball, and sports in general on the internet.
+				Also, being that this site has only been up
+				a couple of days, there's not of content right now and the site itself is rather ugly, 
+				but hopefully that'll change soon. Thanks! </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="content-home">
+					<div class="row">
+						
+						<div class="col-sm-6 border-right">
+							<p class="content-col-title"><em>Recent</em></p>
+							<hr/>
+							
+							<div class="related-box related-box-home">
+								<a href="#">
+									<img ng-src="/client/images/cardinals.jpg" class="related-img"/>
+								</a>
+								<a href="#">
+									<p class="related-text">Cardinals first to 40 wins and how they got there</p>
+								</a>
+								<div class="srctext-box">
+									<p class="related-sourcetext"><em>Image: <a href="https://flic.kr/p/t1kVSq"> "Cardinals vs. Mets: 5/18/2015" by Arturo Pardavalla III via Flickr</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="col-sm-6">
+							<p class="content-col-title"><em>Popular</em></p>
+							<hr/>
+							
+							<div class="related-box related-box-home">
+								<a href="#">
+									<img ng-src="/client/images/cardinals.jpg" class="related-img"/>
+								</a>
+								<a href="#">
+									<p class="related-text">Cardinals first to 40 wins and how they got there</p>
+								</a>
+								<div class="srctext-box">
+									<p class="related-sourcetext"><em>Image: <a href="https://flic.kr/p/t1kVSq"> "Cardinals vs. Mets: 5/18/2015" by Arturo Pardavalla III via Flickr</a> under the <a href="https://creativecommons.org/licenses/by/2.0/">cc-by</a> license</em></p>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>	
+			</div>
+			<div class="col-md-4">
+				<div class="tweets">
+					<!-- current height is 380, change as needed on twitter's site-->
+					<a class="twitter-timeline" href="https://twitter.com/newarithmetic_" data-widget-id="610185373579390977">Tweets by @newarithmetic_</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+				</div>
+				<subscribe-box></subscribe-box>
+			</div>
+		</div>
+		</br>
+		<hr/>
+		<div class="row bottom-text">
+			<general-footer></general-footer>
+		</div>
+		<div class="row gradient-bottom">
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<md-content layout="column" class="subscribe-box no-margin-right md-whiteframe-z3">
+	
+	<p style="margin-bottom: 0;">Enter your email to get latest news: </p>
+	
+	<md-input-container>
+      <label>Email</label>
+      <input ng-model="subsribe.email" type="email">
+    </md-input-container>
+	
+	<md-content layout="row" layout-fill class="subscribe-selectdiv" layout-align="start end">
+	  
+	   <p style="margin-bottom: 2px;">Subscribe to: </p> 
+		
+	  <md-select flex offset="5" placeholder="All" ng-model="subscribe.option" style="padding: 0;">
+		<md-option value="all"> All </md-option>
+		<md-option value="mlb"> MLB </md-option>
+		<md-option value="nba"> NBA </md-option>
+		<md-option value="cubs"> Cubs </md-option>
+      </md-select>
+		
+	</md-content>
+	
+	</br>
+	<md-content layout="row" layout-align="center center" layout-fill>
+		<md-button flex="50" class="md-raised md-primary subscribe-button" ng-click="submitEmail(subscribe)"> Submit </md-button>
+	</md-content>
+	<p ng-show="emailSubmitted" class="subsribe-submit-message"> Thank you! </p>
+</md-content>

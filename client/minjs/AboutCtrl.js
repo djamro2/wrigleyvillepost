@@ -1,0 +1,1 @@
+"use strict";var controllers=controllers||angular.module("newarithmeticApp.controllers",[]);controllers.controller("AboutController",["$scope",function(t){var o=this;o.init=function(){t.isAbout="active"},t.submitEmail=function(o){t.emailSubmitted=!0},o.init()}]);

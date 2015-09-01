@@ -1,0 +1,487 @@
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	padding: 2em 0;
+	background: #E6E6E6;
+}
+
+h1 {
+	font-weight: 900;	
+}
+
+.ad {
+	text-align: center;
+	margin: auto;
+}
+
+.align-top {
+	float: right;
+}
+
+.amazon-box {
+	height: 3em;
+	line-height: 3em;
+	width: 100%;
+	text-align: center;
+	color: black;
+	text-transform: lowercase;
+	margin-top: 1.5em;
+	background: yellow;
+}
+
+.amazon-text {
+	font-size: 1.4em!important;
+	font-weight: 200!important;
+}
+
+.background {
+	background: #E6E6E6;
+}
+
+.bold-border {
+	height: 2px;
+	width: 100%;
+	background: black;
+	margin: 2em 0;
+}
+
+.bottom-content {
+	background: white;
+	margin-top: 2em;
+}
+
+.bottom-content-text {
+	padding-top: 1.5em;
+}
+
+.bottom-text {
+	text-align: center;
+	padding: 1em 0;
+}
+
+.border-right {
+	border-right: 1px solid #E6E6E6;
+}
+
+.comment-form {
+	display: flex;
+	width: 100%;
+}
+
+.comment-input-text {
+	display: table-cell;
+}
+
+.comment-table {
+	width: 100%;
+}
+
+.comment-table-label {
+	text-align: right;
+	padding-right: 1em;
+	width: 150px;
+}
+
+td {
+	padding-top: 1em;
+}
+
+.comment-content {
+	margin-top: 1em!important;
+}
+
+.comment-textarea {
+	width: 100%;
+}
+
+.comments-box {
+	width: 100%;
+	margin-top:2em;
+	background: white;
+	padding: 0.1em 1em;
+	padding-bottom: 1.5em;
+}
+
+.content {
+	margin-top: 1.5em;
+	padding: 1em 1.5em 0 1em;
+	background: white;
+}
+
+.content-col-title {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 700;
+	padding-left: 1em;
+}
+
+.content-home {
+	margin: 1.5em 1em 0 1em;
+}
+
+.content-info-share {
+	vertical-align: middle;
+	margin-top: 1em;
+}
+
+.content-img {
+	width: 100%;
+	height: auto;
+}
+
+.content-img-box {
+	margin: 1.5em 0;
+}
+
+.content-index {
+	margin-top: 1.5em;
+	background: white;
+}
+
+.content-text {
+	font-size: 1.35em;
+	font-weight: 200;
+	margin: 1em 0 2em 0;
+}
+
+.content-title {
+	margin-top: 0;
+}
+
+.content-title-info {
+	margin-top: 0.25em;
+}
+
+.cubs-red {
+	font-weight: 400;
+	font-size: 1.15em;
+	text-transform: uppercase;
+}
+
+.cubs-red:hover {
+	background: #222!important;
+}
+
+.disclaimer {
+	font-weight: 200;
+	color: #222;
+	width: 100%;
+	text-align: center;
+	font-size: 0.85em;
+	margin-bottom: 2.5em;
+	padding: 0 4em;
+}
+
+.error {
+	font-size: 1.2em;
+	color: red;
+	font-weight: 500;
+	margin-bottom: 0!important;
+}
+
+.form-row {
+	display: inline-block;
+	width: 100%;
+	margin-top: 1.5em;
+}
+
+.gradient-bottom {
+	height: 1em;
+	margin: 1em 0;
+	background: -webkit-linear-gradient(white, #E6E6E6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #E6E6E6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #E6E6E6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #E6E6E6); /* Standard syntax (must be last) */
+}
+
+.grey-area {
+	display: inline-block;
+	background: #E6E6E6;
+	height: 2em;
+	width: 100%;
+}
+
+.home-headertext {
+	margin: 1em;
+}
+
+.inline {
+	display: inline;
+}
+
+.main-col {
+	background: #E6E6E6;
+	max-width: 1080px;
+	min-height: 100%;
+	margin: auto;
+	margin-bottom: 1.5em;
+	overflow: hidden;
+}
+
+.margin-auto {
+	margin: auto;
+	text-align: center;
+}
+
+.margin-top-1_5 {
+	margin-top: 1.5em;
+}
+
+.md-select-label {
+	width: 100%;
+}
+
+.md-whiteframe-z3 {
+	overflow: hidden;
+}
+
+.mlb-embedded {
+	margin: 0 1.5em 0 1em;	
+}
+
+.navbar-brand-text {
+	color: #0066FF;
+	font-size: 1.3em;
+	font-weight: 100;
+}
+
+.navbar-home-link {
+	text-decoration: none;
+}
+
+.navbar-inverse {
+	background: #333;
+}
+
+.navbar-nav > li 
+
+.no-decoration {
+	text-decoration: none!important;
+}
+
+.no-decoration:hover {
+	text-decoration: none!important;
+}
+
+.no-margin-right {
+	margin-right: 0;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.padding-right-col {
+	padding-right: 1em;
+}
+
+.related-box {
+	margin-top: 1em;
+	text-decoration: none;
+	color: black;
+	padding-bottom: 0;
+}
+
+.related-box-article {
+	text-align: center;
+}
+
+.related-box-home {
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.related-box:hover {
+	background: #FFFF80;
+}
+
+.related-content {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.related-contentinfo {
+	margin-left: 1.25em;
+}
+
+.related-header {
+	height: 2em;
+	width: 100%;
+	display: inline-block;
+	background-color: #FFFF80;
+	text-align: center;
+	border-top: 2px solid #999;
+	border-bottom: 2px solid black;
+}
+
+.related-headertext {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	height: .97em;
+}
+
+.related-img {
+	width: 100%;
+	height: auto;
+}
+
+.related-rightcol {
+	margin-right: 1em;
+}
+
+.related-sourcetext {
+	font-size: .8em;
+	margin-right: 5px;
+}
+
+.related-text {
+	clear: both;
+	font-family: 'Muli', sans-serif;
+	text-decoration: none;
+	color: black;	
+	font-weight: 800;
+	padding-top: 1em;
+	margin: 0 1em;
+	padding-bottom: .5em;
+	font-size: 1.25em;
+}
+
+.right-col {
+	background: white;
+	margin-top: 1.5em;
+}
+
+.right-col-content {
+	margin-right: 1em;
+	padding-bottom: 1em;
+}
+
+.rightcol-margin {
+	margin-right: 1em;
+}
+
+.side-ad {
+	margin-top: 15px;
+	max-height: 300px;
+}
+
+.share-buttons {
+	height: 2em;
+	margin-bottom: 0;
+	text-decoration: none!important;
+	margin-top: 1em;
+	margin-right: 1.5em;
+}
+
+.share-button-left {
+	background: #0091ea;
+	text-align: center;
+	width: 8em;
+	display: inline-block;
+	height: 2em;
+}
+
+.share-button-right {
+	background: #01579b;
+	text-align: center;
+	text-decoration: none!important;
+	margin-left: 1em;
+	width: 8em;
+	height: 2em;
+	display: inline-block;
+}
+
+.share-button-text {
+	margin-top: 0.25em;
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.social-media-box {
+	height: 4em;
+	line-height: 4em;
+	width: 100%;
+	text-align: center;
+	color: white;
+	text-transform: lowercase;
+	margin-top: 1.5em;
+}
+
+.social-media-text {
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+.social-twitter {
+	background: #0091ea;
+}
+
+.social-facebook {
+	background: #01579b;
+}
+
+.source-code-container {
+	padding-bottom: 40px;
+}
+
+.srctext-box {
+	text-align: right;
+	margin-bottom: -.75em;
+	padding-bottom: 0;
+}
+
+.subscribe-box {
+	margin-top: 1em;
+	padding: 1em;
+}
+
+.subscribe-box label {
+	float: left;
+	font-weight: normal;
+}
+
+.subscribe-box span {
+	display: block;
+    overflow: hidden;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.subscribe-emaillabel {
+	margin-top: 3px;
+}
+
+.subscribe-input {
+	width: 100%;
+}
+
+.subscribe-select {
+	margin-left: 1em;
+}
+
+.subscribe-selectdiv {
+	margin-top: -0.50em;
+}
+
+.subscribe-submit-message {
+	display: inline-block;
+	color: cornflowerblue;
+	margin-top: 0.5em;
+}
+
+.submitted {
+	font-size: 1.2em;
+	color: dodgerblue;
+	font-weight: 500;
+	margin-bottom: 0!important;
+}
+
+.tweets {
+	text-align: center;
+	margin-top: 1.5em;
+}

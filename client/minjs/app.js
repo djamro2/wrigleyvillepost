@@ -1,0 +1,1 @@
+var app=angular.module("newarithmeticApp",["newarithmeticApp.directives","newarithmeticApp.controllers","ngMaterial"]);

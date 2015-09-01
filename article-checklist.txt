@@ -1,0 +1,29 @@
+Last updated 06/22/2015
+
+This is meant to be both a checklist and article workflow list
+
+- Create the new handlebars file in /articles and paste in some text
+- Add to the articles data and create a key that has the same name as the handlebars file, except with underscores
+- Add layout and title to the article
+- Test to see if the routes are correct
+- Replace dummy info with real article info and text (this takes the most time)
+- Add in the rest of the open graph data
+- Update the features article on the sidebar if needed
+- If not done already, find an image, download, and keep the tab open
+- Make sure for the image,that the following have been changed:
+	- image title
+	- image author
+	- link to image
+- Finished recent box should have
+	- The three 3 citation requirements listed above
+	- Changed text
+	- Correct reference to image
+	
+- After work is done, check the following, and if all pass, the site is ready
+	- Article itself is completed and spellchecked
+	- Article has title and all opengraph data
+	- Article routes are working fine
+	- Featured box looks completed (requirements above)
+	- Article sidebar featured box changed if needed
+	- Feautured box is in the appropriate menus
+	- Doublecheck to make sure that all instance of the image are attributed correctly
